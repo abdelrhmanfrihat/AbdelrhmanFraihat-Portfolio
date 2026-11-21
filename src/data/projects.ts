@@ -1,0 +1,8 @@
+export type Project = { id: string; title: string; column: 'work'|'self'; badges: string[]; year?: string; description: string; tech: string[]; github?: string; liveDemo?: string; image?: string }
+export const projects: Project[] = [
+ { id:'tarabot', title:'Tarabot Connect', column:'work', badges:['Internship Experience','Active Development'], year:'2026', description:'Multi-tenant WhatsApp Business messaging platform for NGOs and community-based organizations.', tech:['React 19','TypeScript','Vite','NestJS','PostgreSQL','Redis','BullMQ'] },
+ { id:'car-service', title:'Car Service Center Management System', column:'work', badges:['Coursework'], description:'Console-based management system featuring customer types, polymorphic discounts, appointment scheduling, and service reports.', tech:['Java','OOP','JUnit 5'] },
+ { id:'training-portal', title:'Smart Training Institute Portal', column:'work', badges:['Coursework'], description:'Web application for managing students, instructors, courses, enrollments, and marks with role-based workflows.', tech:['ASP.NET Core MVC','C#','Entity Framework Core','SQL Server'] },
+ { id:'witness', title:'Witness — Crime Reporting Platform', column:'self', badges:['Full-Stack Project'], description:'Full-stack reporting platform with report submissions, image uploads, status tracking, and administrative moderation.', tech:['React 19','Vite','Node.js','Express','PostgreSQL'] },
+ { id:'parking-dbms', title:'Parking Management DBMS', column:'self', badges:['Systems Programming'], description:'File-based database management system with five related tables, hash-based indexing, referential integrity, and concurrent access control.', tech:['C','POSIX Threads','CSV'] },
+]
